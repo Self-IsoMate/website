@@ -23,24 +23,30 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">Self-IsoMate</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a href="#home" class="navbar-brand logo">
+
+            <img src="assets/img/100x88.png" alt="Logo" width="60px" height="50px" style="border-radius: 5px;"> &ensp; Self-IsoMate
+
+        </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="service-page.html">Services</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#particles-js">Download</a></li>
+                    <!--li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Community</a></li-->
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="page landing-page">
-        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(9, 162, 255, 0.85);background-size: auto;  background-position: center;
+    <main id="home" class="page landing-page">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(0, 255, 146, 0.1);background-size: auto;  background-position: center;
         ">
             <div class="text">
-                <h2>Self-IsoMate</h2>
-                <p>We  need a motto: "Do not feel alone in quarantine</p><button class="btn btn-outline-light btn-lg" type="button">Download Demo</button></div>
+                <h1  style="  -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;   font-size: 100px;">Self-IsoMate</h1>
+                <p style="  -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;  font-size: 20px;">Stay safe.<br/>Stay connected.</p><a href="#particles-js"><button class="btn btn-outline-light btn-lg" type="button">Download Demo</button></a></div>
         </section>
 
 
@@ -50,7 +56,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 offset-md-3">
                         <h1 class="text-nowrap text-uppercase text-center text-primary af-mrg-top">Features </h1>
-                        <p class="text-center lead af-mrg-btm">Lorem ipsum dolor sit amet consectetur adipisicing elitsed do eiusmod tempor incididunt </p>
+                        <p class="text-center lead af-mrg-btm">See what the app has to offer </p>
                     </div>
                 </div>
                 <div class="row" id="app-features-row">
@@ -58,76 +64,65 @@
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="0" 
-                    class="media-heading text-uppercase">Feature Heading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere. </p>
+                    class="media-heading text-uppercase">Activities</h4>
+                <p>Learn New Hobbies with othe people in quarantine.  </p>
             </div>
             <div class="media-right">
                 <span class="app-feature-icon glyphicon glyphicon-file"></span>
             </div>
-        </div><div class="media">
+        </div>
+        
+        <div class="media active-feature">
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="1" 
-                    class="media-heading text-uppercase">Feature Heading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere. </p>
+                    class="media-heading text-uppercase">Chat</h4>
+                <p>Connect to people around you and with mutual interests. </p>
             </div>
             <div class="media-right">
                 <span class="app-feature-icon glyphicon glyphicon-cloud"></span>
             </div>
-        </div><div class="media">
-            <div class="media-body">
-                <h4 data-target="#app-features-list-carousel" 
-                    data-slide-to="2" 
-                    class="media-heading text-uppercase">Feature Heading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere. </p>
-            </div>
-            <div class="media-right">
-                <span class="app-feature-icon glyphicon glyphicon-calendar"></span>
-            </div>
-        </div></div>
+        </div>
+    
+    
+    </div>
                     <div class="col-sm-12 col-md-4 app-features-list">
                         <div class="iphone-mockup"><img src="assets/img/iphone.svg" class="device">
                             <div class="screen"></div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 app-features-list"><div class="media">
+                    <div class="col-sm-12 col-md-4 app-features-list"><div class="media active-feature">
             <div class="media-left">
                 <span class="app-feature-icon glyphicon glyphicon-globe"></span>
             </div>
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="3" 
-                    class="media-heading text-uppercase">Feature Heading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere.</p>
+                    class="media-heading text-uppercase">Challenges</h4>
+                <p>Challenge your friends and people around you with fun mini games.</p>
             </div>
-        </div><div class="media">
+        </div><div class="media active-feature">
             <div class="media-left">
                 <span class="app-feature-icon glyphicon glyphicon-credit-card"></span>
             </div>
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="4" 
-                    class="media-heading text-uppercase">Feature Heading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere.</p>
+                    class="media-heading text-uppercase">Community</h4>
+                <p>Live experiences with mates.</p>
             </div>
-        </div><div class="media">
-            <div class="media-left">
-                <span class="app-feature-icon glyphicon glyphicon-user"></span>
-            </div>
-            <div class="media-body">
-                <h4 data-target="#app-features-list-carousel" 
-                    data-slide-to="5" 
-                    class="media-heading text-uppercase">Feature Heading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere.</p>
-            </div>
-        </div></div>
+        </div>
+        
+   
+    
+    </div>
                 </div>
             </div>
         </section>
 
 
 
-        <section class="clean-block slider dark">
+        <!--section class="clean-block slider dark"-->
 
 <div class="jumbotron jumbotron-fluid jumbotron-main" style="height:100vh;width:100%;"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
@@ -139,99 +134,30 @@
                 <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
                     <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700" id="hero-title" style="margin-bottom:0;">Download the app</h1>
                     <p data-aos="fade-up" data-aos-duration="650" data-aos-delay="1450" id="hero-subtitle" style="margin-top:19px;font-size:7;font-family:Poppins, sans-serif;">Available for &nbsp;<strong>Android </strong>&nbsp;&amp;&nbsp;<strong>iOS</strong></p>
-                    <button class="btn btn-primary" type="button" data-aos="fade-up" data-aos-duration="1100"
-                        data-aos-delay="1500" id="hero-btn">Android&nbsp;<i class="fa fa-angle-double-right tada animated"></i>&nbsp;</button>
-                        <button class="btn btn-primary" type="button" data-aos="fade-up" data-aos-duration="1100"
-                        data-aos-delay="1500" id="hero-btn">iOS&nbsp;<i class="fa fa-angle-double-right tada animated"></i>&nbsp;</button>
+                    <button class="btn" type="button" data-aos="fade-up" data-aos-duration="1100"
+                        data-aos-delay="1500"     style="background: #f0f0f0 url()">
+                        <img src="assets/img/google-play-badge.png" alt="Logo" width="100mm" height="40px" style="border-radius: 5px;">
+                        
+                        &nbsp;</i>&nbsp;</button>
+                        <button class="btn" type="button" data-aos="fade-up" data-aos-duration="1100"
+                        data-aos-delay="1500" >
+                        <img src="assets/img/iOSApp.svg" alt="Logo" width="100mm" height="40px" style="border-radius: 5px;">
+
+                        
+                        &nbsp;&nbsp;</button>
                     </div>
             </div>
         </div>
     </div>
 
 
-        </section>
+        <!--/section-->
 
 
 
-        <section class="clean-block about-us">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar1.jpg">
-                            <div class="card-body info">
-                                <h4 class="card-title">John Smith</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar2.jpg">
-                            <div class="card-body info">
-                                <h4 class="card-title">Robert Downturn</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar3.jpg">
-                            <div class="card-body info">
-                                <h4 class="card-title">Ally Sanders</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
-    <footer class="page-footer dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2018 Copyright Text</p>
-        </div>
-    </footer>
+ 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/theme.js"></script>
