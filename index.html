@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="assets/css/Mockup-iPhone-6S.css">
     <link rel="stylesheet" href="assets/css/Network-Particles-Hero.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
 <body>
@@ -32,7 +31,7 @@
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#particles-js">Download</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#downloadApp">Download</a></li>
                     <!--li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Community</a></li-->
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">Contact Us</a></li>
                 </ul>
@@ -46,9 +45,8 @@
                 <h1  style="  -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;   font-size: 100px;">Self-IsoMate</h1>
                 <p style="  -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: black;  font-size: 20px;">Stay safe.<br/>Stay connected.</p><a href="#particles-js"><button class="btn btn-outline-light btn-lg" type="button">Download Demo</button></a></div>
+                -webkit-text-stroke-color: black;  font-size: 20px;">Stay safe.<br/>Stay connected.</p><a href="#downloadApp"><button class="btn btn-light btn-lg" type="button">Download Demo</button></a></div>
         </section>
-
 
 
         <section class="clean-block clean-info dark">
@@ -60,7 +58,9 @@
                     </div>
                 </div>
                 <div class="row" id="app-features-row">
-                    <div class="col-sm-12 col-md-4 app-features-list afl-left"><div class="media active-feature">
+                    <div class="col-sm-12 col-md-4 app-features-list afl-left">
+                        <button type="button" data-toggle="modal" data-target="#ActivitiesModal" style ="background: transparent;border: none;" onmouseover="changeImage('activity')" onmouseout="normalImg()"  >
+                        <div class="media active-feature">
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="0" 
@@ -68,10 +68,13 @@
                 <p>Learn New Hobbies with othe people in quarantine.  </p>
             </div>
             <div class="media-right">
-                <span class="app-feature-icon glyphicon glyphicon-file"></span>
+                    <i class="fa fa-home fa-4x" style="color:rgb(0, 255, 146)"></i>
+                </span>
             </div>
         </div>
-        
+        </button>
+
+        <button type="button" data-toggle="modal" data-target="#ChatModal" style ="background: transparent;border: none;" onmouseover="changeImage('chat')" onmouseout="normalImg()">
         <div class="media active-feature">
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
@@ -80,20 +83,25 @@
                 <p>Connect to people around you and with mutual interests. </p>
             </div>
             <div class="media-right">
-                <span class="app-feature-icon glyphicon glyphicon-cloud"></span>
+                <i class="fa fa-comment fa-4x" style="color:rgb(0, 255, 146)"></i>
             </div>
         </div>
-    
-    
     </div>
-                    <div class="col-sm-12 col-md-4 app-features-list">
-                        <div class="iphone-mockup"><img src="assets/img/iphone.svg" class="device">
-                            <div class="screen"></div>
+</button>
+                    <div class="col-sm-12 col-md-4 app-features-list cellulare" >
+                        <div class="iphone-mockup">
+                            <img src="assets/img/iphone.svg" class="device">
+                            <div class="screen">
+                                <img src="assets/img/screens/default.png" id="screenImage" style="width: 100%; height: 100%; ">
+                                                   </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 app-features-list"><div class="media active-feature">
+                    <div class="col-sm-12 col-md-4 app-features-list">
+                        
+                        <button type="button" data-toggle="modal" data-target="#ChallengesModal" style ="background: transparent;border: none;" onmouseover="changeImage('challenges')" onmouseout="normalImg()">
+                        <div class="media active-feature">
             <div class="media-left">
-                <span class="app-feature-icon glyphicon glyphicon-globe"></span>
+                <i class="fa fa-trophy  fa-4x" style="color:rgb(0, 255, 146)"></i>
             </div>
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
@@ -101,9 +109,13 @@
                     class="media-heading text-uppercase">Challenges</h4>
                 <p>Challenge your friends and people around you with fun mini games.</p>
             </div>
-        </div><div class="media active-feature">
+        </div>
+        </button>
+
+        <button type="button" data-toggle="modal" data-target="#CommunityModal" style ="background: transparent;border: none;" onmouseover="changeImage('community')" onmouseout="normalImg()">
+        <div class="media active-feature">
             <div class="media-left">
-                <span class="app-feature-icon glyphicon glyphicon-credit-card"></span>
+                <i class="fa fa-group    fa-4x" style="color:rgb(0, 255, 146)"></i>
             </div>
             <div class="media-body">
                 <h4 data-target="#app-features-list-carousel" 
@@ -112,7 +124,7 @@
                 <p>Live experiences with mates.</p>
             </div>
         </div>
-        
+        </button>
    
     
     </div>
@@ -124,7 +136,7 @@
 
         <!--section class="clean-block slider dark"-->
 
-<div class="jumbotron jumbotron-fluid jumbotron-main" style="height:100vh;width:100%;"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<div class="jumbotron jumbotron-fluid jumbotron-main" style="height:100vh;width:100%;" id="downloadApp"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <div id="particles-js">
 	<canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
@@ -150,14 +162,119 @@
         </div>
     </div>
 
-
-        <!--/section-->
-
-
+---------------
+<div class="modal fade" id="ActivitiesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Activities</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Try one of our daily activities and see what's new today:
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="goto('#downloadApp')" >Try Self-IsoMate app!</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>      
+---------------
+<div class="modal fade" id="ChatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Chat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Connect and chat with other users and make friends all aroudn the world:
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="goto('#downloadApp')" >Try Self-IsoMate app!</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+---------------
+<div class="modal fade" id="ChallengesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Challenges</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Challenge other users at our daily contests:
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="goto('#downloadApp')" >Try Self-IsoMate app!</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+---------------
+<div class="modal fade" id="CommunityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Community</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          See how our memebers are connecting creating a huge community:
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="goto('#downloadApp')" >Try Self-IsoMate app!</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+--------------- 
 
 
     </main>
- 
+ <script>
+       function goto(url){
+    window.location=url;
+    }
+
+    function changeImage(section){
+        switch(section) {
+  case 'activity':
+  document.getElementById("screenImage").src = "assets/img/screens/activity.jpg";
+    break;
+  case 'chat':
+  document.getElementById("screenImage").src = "assets/img/screens/chat.jpg";
+    break;
+    case 'challenges':
+    document.getElementById("screenImage").src = "assets/img/screens/challenges.jpg";
+    break;
+    case 'community':
+    document.getElementById("screenImage").src = "assets/img/screens/community.jpg";
+    break;
+  default:
+  document.getElementById("screenImage").src = "assets/img/screens/default.jpg";
+}
+    }
+    function normalImg(x) {
+      document.getElementById("screenImage").src = "assets/img/screens/default.jpg";
+
+}
+ </script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/theme.js"></script>
