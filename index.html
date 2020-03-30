@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="assets/css/Mockup-iPhone-6S.css">
     <link rel="stylesheet" href="assets/css/Network-Particles-Hero.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/tech/favicon.png"/>
+
 </head>
 
 <body>
@@ -58,9 +60,8 @@
                 </div>
                 <div class="row" id="app-features-row">
                     <div class="col-sm-12 col-md-4 app-features-list afl-left">
-                        <button type="button" data-toggle="modal" data-target="#ActivitiesModal" style ="background: transparent;border: none;" onmouseover="changeImage('activity')" onmouseout="normalImg()"  >
                         <div class="media active-feature">
-            <div class="media-body">
+            <div class="media-body" onmouseover="changeImage('activity')" onmouseout="normalImg()">
               <i class="fa fa-home fa-4x" style="color:rgb(0, 255, 146)"></i>
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="0" 
@@ -68,11 +69,8 @@
                 <p>Learn new hobbies and hone old hobbies with other people in quarantine  </p>
             </div>
         </div>
-        </button>
-
-        <button type="button" data-toggle="modal" data-target="#ChatModal" style ="background: transparent;border: none;" onmouseover="changeImage('chat')" onmouseout="normalImg()">
         <div class="media active-feature">
-            <div class="media-body">
+            <div class="media-body" onmouseover="changeImage('chat')" onmouseout="normalImg()">
               <i class="fa fa-comment fa-4x" style="color:rgb(0, 255, 146); border-bottom: 3px solid transparent;"></i>
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="1" 
@@ -81,7 +79,6 @@
             </div>
         </div>
     </div>
-</button>
                   <div class="col-sm-12 col-md-4 app-features-list cellulare" >
                         <div class="iphone-mockup">
                             <img src="assets/img/iphone.svg" class="device">
@@ -90,11 +87,9 @@
                                                    </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 app-features-list">
-                        
-                        <button type="button" data-toggle="modal" data-target="#ChallengesModal" style ="background: transparent;border: none;" onmouseover="changeImage('challenges')" onmouseout="normalImg()">
+                    <div class="col-sm-12 col-md-4 app-features-list">   
                         <div class="media active-feature">
-            <div class="media-body">
+            <div class="media-body" onmouseover="changeImage('challenges')" onmouseout="normalImg()">
               <i class="fa fa-trophy  fa-4x" style="color:rgb(0, 255, 146)"></i>
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="3" 
@@ -102,11 +97,8 @@
                 <p>Check out our weekly and monthly challenges with the chance to win great prizes</p>
             </div>
         </div>
-        </button>
-
-        <button type="button" data-toggle="modal" data-target="#CommunityModal" style ="background: transparent;border: none;" onmouseover="changeImage('community')" onmouseout="normalImg()">
-        <div class="media active-feature">
-            <div class="media-body">
+        <div class="media active-feature" >
+            <div class="media-body" onmouseover="changeImage('community')" onmouseout="normalImg()">
               <i class="fa fa-group fa-4x" style="color:rgb(0, 255, 146); border-bottom: 5px solid transparent;"></i>
                 <h4 data-target="#app-features-list-carousel" 
                     data-slide-to="4" 
@@ -114,7 +106,6 @@
                 <p>Find groups of people with your interests and keep up-to-date</p>
             </div>
         </div>
-        </button>
    
     
     </div>
@@ -138,8 +129,9 @@
                     <p data-aos="fade-up" data-aos-duration="650" data-aos-delay="1450" id="hero-subtitle" style="margin-top:19px;font-size:7;font-family:Poppins, sans-serif;">
                       Available for &nbsp;<strong>Android </strong>&nbsp;&nbsp;<strong></strong></p>
                     <button class="btn" type="button" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1500" style="background-color:rgb(255,92,0); margin-top: 10px;" width="100mm" height="40px">
-                        <a href="#" style="text-decoration: none;color: white; ">DOWNLOAD .apk <i class="fa fa-download"></i></a>   
-                        </button>
+                        <a href="assets/apk/self-isomate.apk" style="text-decoration: none;color: white; "  download="self-isomate.apk">DOWNLOAD .apk <i class="fa fa-download"></i></a>   
+  
+                      </button>
                     <!--button class="btn" type="button" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1500" style="background-color: transparent;" width="100mm" height="40px">
                         <a href="https://play.google.com/"><img src="assets/img/google-play-badge.png" alt="Google Play Logo" width="120mm" height="47px" style="border-radius: 5px;"></a>
                         
@@ -152,124 +144,8 @@
                     </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="modal fade" id="ActivitiesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Activities</h5>
-          <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body .container-fluid">
-          <div class="row">
-            <div class="col-md-5 col-centered text-center align-middle justify-content-center align-self-center">
-          Try one of our daily activities and see what's new today:
-             </div>
-          <div class="col-md-7 ">
-            <div class="iphone-mockup">
-                <img src="assets/img/iphone.svg" class="device">
-                <div class="screen">
-                  <img src="assets/img/modalExamples/activities.gif" class="screenImageModal" style="width: 100%; height: 100%; ">
-                                       </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>      
-
-  <div class="modal fade" id="ChatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Chat</h5>
-          <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body .container-fluid">
-          <div class="row">
-            <div class="col-md-5 col-centered text-center align-middle justify-content-center align-self-center">
-              Connect and chat with other users and make friends all aroudn the world:
-            </div>
-          <div class="col-md-7 ">
-            <div class="iphone-mockup">
-                <img src="assets/img/iphone.svg" class="device">
-                <div class="screen">
-                  <img src="assets/img/modalExamples/chat.gif" class="screenImageModal" style="width: 100%; height: 100%; ">
-                                       </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-<div class="modal fade" id="ChallengesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Challenges</h5>
-          <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body .container-fluid">
-          <div class="row">
-            <div class="col-md-5 col-centered text-center align-middle justify-content-center align-self-center">
-              Challenge other users at our daily contests:
-            </div>
-          <div class="col-md-7 ">
-            <div class="iphone-mockup">
-                <img src="assets/img/iphone.svg" class="device">
-                <div class="screen">
-                  <img src="assets/img/modalExamples/challenges.gif" class="screenImageModal" style="width: 100%; height: 100%; ">
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal fade" id="CommunityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Community</h5>
-          <button type="button" class="close fa-2x" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body .container-fluid">
-          <div class="row">
-            <div class="col-md-5 col-centered text-center align-middle justify-content-center align-self-center">
-              See how our memebers are connecting creating a huge community:
-            </div>
-          <div class="col-md-7 ">
-            <div class="iphone-mockup">
-                <img src="assets/img/iphone.svg" class="device">
-                <div class="screen">
-                  <img src="assets/img/modalExamples/community.gif" class="screenImageModal" style="width: 100%; height: 100%; ">
-                                       </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
+    </div>   
+ 
 
 
     </main>
