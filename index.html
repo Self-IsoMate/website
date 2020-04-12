@@ -23,11 +23,18 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a href="index.html" class="navbar-brand logo">
-
-            <img src="assets/img/100x88.png" alt="Logo" width="60px" height="50px" style="border-radius: 5px;"> &ensp; Self-IsoMate
-
-        </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container">
+            <a href="index.html" class="navbar-brand logo">
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <img src="assets/img/100x88.png" alt="Logo" width="60px" height="50px" style="border-radius: 5px;"> 
+                        </div>
+                        <div class="col-sm-3">
+                        <p style="line-height:25px; vertical-align: bottom;">Self Iso-Mate <br /> <small>Stay Safe.  Stay Connected.</small></p>
+                        </div>
+        </div>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -39,16 +46,54 @@
             </div>
         </div>
     </nav>
-    <main id="home" class="page landing-page">
-        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(0, 255, 146, 0.1);background-size: auto;  background-position: center;
+        <!--section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(0, 255, 146, 0.1);background-size: auto;  background-position: center;
         ">
             <div class="text">
                 <h1  style="  -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;   font-size: 80px;">Self-IsoMate</h1>
                 <p style="  -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;  font-size: 20px;">Stay safe.<br/>Stay connected.</p><a href="#downloadApp"><button class="btn btn-light btn-lg" type="button">Download</button></a></div>
-        </section>
+        </section-->
+        <main id="home" class="page landing-page">
 
+    <!--Carousel Wrapper-->
+<div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false"  >
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
+      <li data-target="#video-carousel-example" data-slide-to="1"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="embed-responsive embed-responsive-21by9">
+        <video class="video-fluid embed-responsive-item"  autoplay loop muted>
+          <source src="./assets/video/Self-IsoMateMarketingVideo.mp4" type="video/mp4" />
+        </video>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="embed-responsive embed-responsive-21by9">
+          <video class="video-fluid embed-responsive-item"  autoplay loop muted>
+            <source src="./assets/video/Self-IsoMateTryVideo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#video-carousel-example" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--Carousel Wrapper-->
 
         <section class="clean-block clean-info dark">
             <div class="container">
@@ -149,6 +194,8 @@
 
     </main>
  <script>
+
+
        function goto(url){
     window.location=url;
     }
