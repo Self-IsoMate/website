@@ -81,7 +81,13 @@
 #content:after {
 	  right: 0;
 	  border-width: .5em .5em 0 0;
-	}
+  }
+  @media screen and (max-width: 1150px) {
+    #ribbon{
+      display: none;
+    }
+  }
+
     </style>
 </head>
 
@@ -119,18 +125,15 @@
               <div class="container">
                 <a href="https://devpost.com/software/self-isomate"><div class="intro">
                   <div class="intro">
-                    <div id="ribbon" style="
- position: absolute;
-  right: 0.5;
-                    z-index: 1">
-                      <span id="content">Best use of MondoDB</span>
+                    <div id="ribbon" style="position: absolute; right: 0; z-index: 1 ; margin-right: 500px; margin-top: 50px;">
+                      <span id=>Best use of MongoDB</span>
                 </div>
                   </div> 
                 </a>
                   <div class="row">
                       <div class="col-12">
                              <!--Carousel Wrapper-->
-<div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false"  >
+<div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false"  style="margin-top: 50px;">
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
