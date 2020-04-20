@@ -33,7 +33,7 @@ h1.hero-title, h2.hero-title, h3.hero-title {
   color: #F0FFFF	;
   background-color: rgba(0, 255, 146, 0.5);
     text-decoration-color: #F0FFFF;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow:0 3px 3pxrgb(71, 76, 82);
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
@@ -47,7 +47,7 @@ h1.hero-titleactivity, h2.hero-titleactivity, h3.hero-titleactivity {
   color: #F0FFFF	;
   background-color: rgba(255, 255, 255, 0.8);
     text-decoration-color: #F0FFFF;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow:0 3px 3pxrgb(71, 76, 82);
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
@@ -61,7 +61,7 @@ h1.hero-titlechat, h2.hero-titlechat, h3.hero-titlechat {
   color: #F0FFFF	;
   background-color: rgba(138, 128, 128  , 0.6);
     text-decoration-color: #F0FFFF;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow:0 3px 3pxrgb(71, 76, 82);
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
