@@ -1,8 +1,8 @@
 div.jumbotron.carousel-hero {
   color:#fff;
   text-align:center;
-  background-size:cover;
   background-position:center;
+  background-size:contain;
   padding-top:100px;
   padding-bottom:100px;
   margin-bottom:0;
