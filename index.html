@@ -143,13 +143,18 @@
                             <span class="sr-only">Next</span>
                           </a>
                         </div>
-                        <button class="button btn-lg btn-block show-mobile" style="font-weight:bold;white-space:normal;" type="button" data-hover="Stay Safe. Stay Connected." onclick="myFunction()" >
-                          <span class="show-mobile" style=" 
-                          margin: 0 auto;
+
+                        <a href="#downloadApp">
+                        <button class="button btn-lg btn-block show-mobile" style="font-weight:bold;white-space:normal;" 
+                        type="button" data-hover="Stay Safe. Stay Connected.">
+                          <span class="show-mobile" 
+                          style="margin: 0 auto;
                           text-align: center;">
                             Download now!
                         </span>
                         </button>
+                      </a>
+
 
                              <!--Carousel Wrapper-->
 <div id="video-carousel-example" class="carousel slide carousel-fade hide-mobile" data-ride="carousel" data-interval="false"  >
@@ -297,9 +302,10 @@
 
     </main>
  <script>
-function myFunction(){
+function gotoDownload(){
+  var elmnt = document.getElementById("downloadApp");
 
-  setTimeout(function(){ window.location.hash='downloadApp'; }, 1000);
+  setTimeout(function(){ elmnt.scrollIntoView(); }, 1000);
 
   }
 
